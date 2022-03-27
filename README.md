@@ -7,3 +7,10 @@ Checklist:
 2) Create the loss functions 
 3) Create the training loop 
 4) Test on CIFAR 
+
+
+Files:
+model.py: Where the Generator and Discriminator classes will be made
+main.py: Where the model will be trained 
+helper_functions.py: Utility functions
+(More files may be added according to the need)
