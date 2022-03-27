@@ -1,4 +1,4 @@
-# Cleaner-Implementation-of-the-Progressive-GANs
+# Cleaner-Implementation-of-the-Progressive-GANs-Paper
 This is an attempt for cleaner implementation of Progressive GANs in Tensorflow Keras
 
 
