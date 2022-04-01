@@ -131,7 +131,7 @@ class Discriminator(tf.keras.models.Sequential):
         self.disc_block = [tf.keras.layers.InputLayer(input_shape=self.in_shape)]
 
         for i in range(self.stage, 0, -1):
-            d1 = DiscriminatorBlock(self.stage)
+            d1 = DiscriminatorBlock(i)
             self.disc_block.append(d1)
 
         self.disc_block.append(
