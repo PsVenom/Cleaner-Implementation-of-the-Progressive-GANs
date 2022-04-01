@@ -180,12 +180,12 @@ class Discriminator(tf.keras.models.Sequential):
 
 
 ### Testing Sequences for Discriminator
-noise = tf.random.normal([1, 8, 8, 3])
-disc_1 = Discriminator()
-print(disc_1)
-y = disc_1(noise)
-print(y.shape)
-noise_2 = tf.random.normal([1, 16, 16, 3])
-disc_2 = disc_1.grow()
-y2 = disc_2(noise_2)
-print(y2.shape)
+# noise = tf.random.normal([1, 8, 8, 3])
+# disc_1 = Discriminator()
+# print(disc_1)
+# y = disc_1(noise)
+# print(y.shape)
+# noise_2 = tf.random.normal([1, 16, 16, 3])
+# disc_2 = disc_1.grow()
+# y2 = disc_2(noise_2)
+# print(y2.shape)
