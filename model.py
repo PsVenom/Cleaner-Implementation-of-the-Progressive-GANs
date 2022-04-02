@@ -144,6 +144,9 @@ class Discriminator(tf.keras.models.Sequential):
             standard_conv(filters=num_filters(1), kernel_size=4, padding="valid")
         )
         self.disc_block.append(
+            tf.keras.layers.MaxPooling2D()
+        )
+        self.disc_block.append(
             tf.keras.layers.Flatten()
         )
         self.disc_block.append(
