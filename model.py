@@ -4,8 +4,6 @@ from helper_functions import num_filters, stage_of_resolution, resolution_of_sta
 
 
 ## TODO: Add a class to scale the outputs from the Convolution layer Here
-
-
 ## TODO: Implement the Minibatch Standard Deviation Layer here
 
 
