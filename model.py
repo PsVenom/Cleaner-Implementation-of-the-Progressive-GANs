@@ -129,7 +129,7 @@ class Discriminator(tf.keras.models.Sequential):
         super(Discriminator, self).__init__(*args, **kwargs)
         self.resolution = resolution
         self.stage = stage_of_resolution(self.resolution)
-        self.in_shape = tf.TensorShape([self.resolution, self.resolution, 3])
+        self.in_shape = tf.TensorShape([self.resolution, self.resolution, 1])
         self.disc_block = [tf.keras.layers.InputLayer(input_shape=self.in_shape)]
 
         for i in range(self.stage, 0, -1):
@@ -142,9 +142,6 @@ class Discriminator(tf.keras.models.Sequential):
         )
         self.disc_block.append(
             standard_conv(filters=num_filters(1), kernel_size=4, padding="valid")
-        )
-        self.disc_block.append(
-            tf.keras.layers.MaxPooling2D()
         )
         self.disc_block.append(
             tf.keras.layers.Flatten()
