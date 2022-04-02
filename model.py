@@ -109,6 +109,7 @@ def DiscriminatorBlock(stage, kernel_size = 3, strides=1, padding = "same"):
                           kernel_size=kernel_size,
                           strides=strides,
                           padding=padding),
+            tf.keras.layers.AveragePooling2D(),
             standard_conv(filters=num_filters(stage),
                           kernel_size=kernel_size,
                           strides=strides,
