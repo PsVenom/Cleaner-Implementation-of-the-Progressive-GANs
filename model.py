@@ -1,4 +1,3 @@
-
 import tensorflow as tf
 from helper_functions import num_filters, stage_of_resolution, resolution_of_stage
 
